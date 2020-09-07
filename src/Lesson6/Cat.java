@@ -1,22 +1,30 @@
 package Lesson6;
 
-class Cat extends Animal {
-    private final int MAX_RUN_LENGTH = 200;
-    private final double MAX_JUMP_HEIGTH = 2;
-    @Override
-    void run(int length) {
-        if ((length >= 0) && (length <= MAX_RUN_LENGTH)) System.out.println("run: true");
-        else System.out.println("run: false");
+public class Cat extends Animal {
+
+    private String color;
+
+    public Cat(String name, int age, String color) {
+        super(name, age);
+        this.color = color;
+
     }
 
-    @Override
-    void swim(int length) {
-        System.out.println("swim: false");
+    public void printCatInfo(){
+        System.out.println("Cat: name = " + name + "; age = " + age +"; color = " + color);
     }
 
+    public void meow(){
+        System.out.println("Кошка мяукнула!");
+        }
+
+
     @Override
-    void jump(double height) {
-        if ((height >= 0) && (height <= MAX_JUMP_HEIGTH)) System.out.println("jump: true");
-        else System.out.println("jump: fase");
+    public String toString() {
+        return "Cat{" +
+                "color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

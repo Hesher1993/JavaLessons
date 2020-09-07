@@ -1,13 +1,33 @@
 package Lesson6;
 
-abstract class Animal {
-    private final int MAX_RUN_LENGTH = 0;
-    private final int MAX_SWIM_LENGTH = 0;
-    private final double MAX_JUMP_HEIGTH = 0;
+public class Animal {
 
-    abstract void run(int length);
 
-    abstract void swim(int length);
+        protected String name;
+        protected int age;
 
-    abstract void jump(double height);
+        public Animal(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+
+        public String getName(){
+            return name;
+        }
+        public int getAge() {
+            return age;
+        }
+
+        public void printInfo(){
+            System.out.println(toString());
+        }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
