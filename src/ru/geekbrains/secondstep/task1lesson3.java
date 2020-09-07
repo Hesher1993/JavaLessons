@@ -2,7 +2,7 @@ package ru.geekbrains.secondstep;
 
 import java.util.Scanner;
 
- public class task1lesson3 {
+public class task1lesson3 {
     public static int answerCount = 3;
     public static boolean restartGame;
     public static Scanner scanner = new Scanner(System.in);
@@ -62,4 +62,5 @@ import java.util.Scanner;
 
     }
 }
+
 
