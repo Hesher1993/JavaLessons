@@ -1,4 +1,4 @@
-package Lesson6;
+package Homework;
 
 class Dog extends Animal {
     private final int MAX_RUN_LENGTH = 500;
