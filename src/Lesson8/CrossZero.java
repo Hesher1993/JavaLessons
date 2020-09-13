@@ -281,7 +281,7 @@ public class CrossZero extends JFrame {
                 countXD2 += 1;
                 if (countXD2 == SIZE) {
                     //JOptionPane.showMessageDialog(null, "You Win");
-                    int reply = JOptionPane.showConfirmDialog(null, "Ты выиграл! Еще раз?", "Победа!", JOptionPane.YES_NO_OPTION);
+                    int reply = JOptionPane.showConfirmDialog(null, "Ты выиграл!! Еще раз?", "Победа!", JOptionPane.YES_NO_OPTION);
                     if (reply == JOptionPane.YES_OPTION){
                         startNew();
                     } else {
