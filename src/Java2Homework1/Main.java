@@ -9,14 +9,14 @@ public class Main {
         System.out.println("Введите число строк: ");
         int i = scanner.nextInt();
         System.out.println("Введите число колонок: ");
-        int j = scanner.nextInt();
+        int l = scanner.nextInt();
 
-        String[][] str = new String[i][j];
+        String[][] str = new String[i][l];
         for (int i_ = 0; i_ < i; i_++) {
-            for (int j_ = 0; j_ < j; j_++)
+            for (int l_ = 0; l_ < l; l_++)
             {
-                System.out.println("Введите строку[" + i_ + "," + j_ + "]: ");
-                str[i_][j_] = scanner.next();
+                System.out.println("Введите строку [" + i_ + "," + l_ + "]: ");
+                str[i_][l_] = scanner.next();
             }
         }
         getArraySumm(str);
@@ -34,9 +34,9 @@ public class Main {
 
         int sum = 0;
         for (int i = 0; i < str.length; i++) {
-            for (int j = 0; j < str[i].length; j++) {
-                inputDate(str[i][j], i, j);
-                sum += Integer.parseInt(str[i][j]);
+            for (int l = 0; l < str[i].length; l++) {
+                inputDate(str[i][l], i, l);
+                sum += Integer.parseInt(str[i][l]);
             }
         }
         System.out.println("Результат: ");
