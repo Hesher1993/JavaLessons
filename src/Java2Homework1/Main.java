@@ -15,7 +15,7 @@ public class Main {
         for (int i_ = 0; i_ < i; i_++) {
             for (int l_ = 0; l_ < l; l_++)
             {
-                System.out.println("Введите строку[" + i_ + "," + l_ + "]: ");
+                System.out.println("Введите строку [" + i_ + "," + l_ + "]: ");
                 str[i_][l_] = scanner.next();
             }
         }
