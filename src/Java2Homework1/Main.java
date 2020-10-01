@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите число строк: ");
+        System.out.println("Введите число строк: " );
         int i = scanner.nextInt();
         System.out.println("Введите число колонок: ");
         int l = scanner.nextInt();
@@ -15,7 +15,7 @@ public class Main {
         for (int i_ = 0; i_ < i; i_++) {
             for (int l_ = 0; l_ < l; l_++)
             {
-                System.out.println("Введите строку [" + i_ + "," + l_ + "]: ");
+                System.out.println("Введите строку[" + i_ + "," + l_ + "]: ");
                 str[i_][l_] = scanner.next();
             }
         }
