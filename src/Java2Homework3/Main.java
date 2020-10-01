@@ -7,8 +7,8 @@ public class Main {
         world[0] = "Word 1";
         world[1] = "123";
         world[2] = "qwerty";
-        world[3] = "zxcre";
-        world[4] = "zxcre";
+        world[3] = "zxsre";
+        world[4] = "zxsre";
         world[5] = "124";
         world[6] = "123";
         world[7] = "qwerty";
