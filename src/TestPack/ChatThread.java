@@ -12,6 +12,7 @@ public class ChatThread {
     private DataInputStream in;
     private DataOutputStream out;
     private String name;
+    private  boolean haveName;
 
     public ChatThread(Server server, Socket socket) throws IOException {
         this.server = server;
@@ -35,6 +36,15 @@ public class ChatThread {
                 e.printStackTrace();
             }
         });
+        haveName = false;
+
+        Thread aut = new Thread(() ->{
+            try{
+                haveName = authentication();
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+        });
 
         if (authentication()) {
             thread.start();
@@ -43,9 +53,17 @@ public class ChatThread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            if (haveName){
+                thread.start();
+                try{
+                    thread.join();
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
         }
 
-        closeConnection();
+
     }
 
     private boolean authentication() throws IOException {

@@ -38,6 +38,24 @@ public class Server {
         }
     }
 
+    public boolean closeClinet(String name){
+        if(name == null){
+            System.out.println("Клиент не успел авторизоваться");
+
+            return true;
+        }
+        if (!listClient.isEmpty()){
+            listClient.remove(name);
+
+            System.out.println("Клиент удален из чата! " + name);
+
+            return true;
+        }
+        System.out.println("Клиента уже не в чате! " + name);
+            return false;
+    }
+
+
     public boolean closeClient(String name) {
         if (!listClient.isEmpty()) {
             listClient.remove(name);
