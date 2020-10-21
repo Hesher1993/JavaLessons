@@ -25,7 +25,7 @@ public class Client {
             connectToServer(inr);
             closeConnection();
         } catch (IOException e) {
-            clientInterface.updateDialog("Не удалось подключиться к серверу");
+            clientInterface.updateDialog("Не удалось подключиться к серверу !");
             e.printStackTrace();
         }
     }
