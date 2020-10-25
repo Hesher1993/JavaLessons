@@ -6,10 +6,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author Chaykin Ivan
- * @version 13.10.2019
- */
 
 public class AuthService {
 
@@ -180,7 +176,6 @@ public class AuthService {
         }
     }
 
-
-
-
+    public void start() {
+    }
 }
