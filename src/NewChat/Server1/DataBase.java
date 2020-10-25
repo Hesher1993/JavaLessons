@@ -27,6 +27,7 @@ public class DataBase {
         }
     }
 
+
     public static List<String> wordFilter () {
         List<String> wordFilter = new ArrayList<>();
         String sql = String.format("SELECT word FROM DataBase");

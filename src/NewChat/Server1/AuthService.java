@@ -35,6 +35,7 @@ public class AuthService {
 
     public static String getNickByLoginAndPass(String login, String pass) {
 
+
         String sql = String.format("select nickname, password FROM userTable where" +
                 " login = '%s'", login);
         try {
