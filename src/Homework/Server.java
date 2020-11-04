@@ -24,7 +24,7 @@ public class Server {
         }
     }
 
-    private static void startServer() throws IOException {
+    public static void startServer() throws IOException {
         socket = null;
         serverSocket = new ServerSocket(8181);
         System.out.println("Сервер запущен, ожидаем подключения...");
