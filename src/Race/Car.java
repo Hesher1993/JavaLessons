@@ -29,6 +29,7 @@ public class Car implements Runnable {
         this.cyclicBarrier = cyclicBarrier;
         this.finishCars = finishCars;
     }
+
     @Override
     public void run() {
         try {
