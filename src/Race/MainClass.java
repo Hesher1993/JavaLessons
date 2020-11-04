@@ -4,6 +4,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
+
 public class MainClass {
     public static final int CARS_COUNT = 4;
     public static final CyclicBarrier cyclicBarrier = new CyclicBarrier(CARS_COUNT + 1);
